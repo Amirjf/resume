@@ -1,38 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px){
+
+  .col-md-8 {
+      flex: 0 0 auto;
+      width: 70.666667%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 768px){
+
+  .col-md-3 {
+      flex: 0 0 auto;
+      width: 22%;
+  }
+}
+
+
+
+.text-faded{
+  color: #8c8c8e !important;
+}
+
+body {
+  background-color: #191923;
+  font-family: poppins;
+}
+
+
+h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sidebar{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  height: calc(100vh - 240px);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+h1{
+  font-family: Poppins;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.devider{
+  background: #8c8c8e;
+  width: 69%;
+  height: 1px;
+  opacity: .3;
+}
+
+.side-info {
+  background-color: #20202a;
+  position: fixed;
+  width: 290px;
+  height: calc(100vh-30px);
+  min-width: 290px;
+  z-index: 999;
+}
+
+.top-bg-content {
+  background: url("http://amir-jf.ir/wp-content/uploads/2020/09/bg-1.jpg");
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-position: center;
+  height: 385px;
+  background-size: cover;
+}
+
+.top-bg-overlay{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%);
+}
+
+.avatar-column span {
+  top: 93px;
+  left: 170px;
+}
+
+.avatar-column {
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  ;
+}
+
+
+.avatar {
+  width: 33%;
+  cursor: pointer;
+}
+
+.app {
+  padding: 15px;
+  width: 100vw;
+  height: 100%;
+}
+
+.wrapper {
+  width: 1440px !important;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.location-info .information-list li{
+  color: #8c8c8e;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.lang-skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lang-skills .lang-skills-item{
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+    font-size: 13px;
+}
+
+#stroke{
+stroke-dasharray: 292.273, 292.273;
+stroke-dashoffset: 0;
+}
+.circleprog{
+  position: relative;
+  margin: 0 auto 10px 20px;
+  width: 59%;
+}
+
+.progressbar-text{
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.line-progress{
+  position: relative;
+}
+
+
+.line-progress-percent{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 50%;
+  font-size: 14px;
+  top: -13px;
+  text-align: right;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Knowledge section */
+
+.knowledge-list ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+.knowledge-list ul li{
+  color: #8c8c8e;
+  
+}
+
+.knowledge-list ul li i{
+  padding: 8px;
+  
+}
+
+
+
+/* .back-shape{
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -30;
+  width: 90px;
+  height: 30px;
+  margin-left: 5%;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: rgba(30,30,40,.88);
+  
+
+} */
+
+
+
+
+
+.hero{
+  background: url('http://amir-jf.ir/wp-content/uploads/2020/09/bg-1.jpg');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.hero-overlay{
+  position: relative;
+  background: linear-gradient(90deg,rgba(45,45,58,.9) 15%,rgba(45,45,58,.7) 50%,rgba(43,43,53,.7) 100%);
+  display: flex;
+  padding: 80px;
+
+}
+
+.my-pic{
+  width: 373px;
+  position: absolute;
+  bottom: 0;
+  right: 38px;
+}
+
+.hero-title{
+  width: 55%;
+}
+
+.content{
+  padding-top: 30px;
+}
+
+.counter-container{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.counter{
+  color: yellow;
+  font-size: 19px;
+  font-weight: 700;
 }
