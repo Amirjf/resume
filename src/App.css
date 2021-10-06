@@ -153,7 +153,7 @@ h6 {
 .lang-skills{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .lang-skills .lang-skills-item{
@@ -170,7 +170,7 @@ stroke-dashoffset: 0;
 }
 .circleprog{
   position: relative;
-  margin: 0 auto 10px 20px;
+  margin: 0 auto 10px 16px;
   width: 59%;
 }
 

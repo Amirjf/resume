@@ -35,10 +35,6 @@ function App() {
                 <div className="top-bg-overlay"></div>
               </div>
               <div className="hero mt-5">
-                {/* <div className="back-shape">
-                
-              </div> */}
-
                 <div className="hero-overlay">
                   <div className="hero-title">
                     <div className="hero-title-h">
@@ -53,7 +49,7 @@ function App() {
                       <span className="type-writer">
                         <Typewriter
                           options={{
-                            strings: ["Web Applications", "Design Websites","Wordpress Websites"],
+                            strings: ["Web Applications","Wordpress Websites"],
                             autoStart: true,
                             loop: true,
                           }}
