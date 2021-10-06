@@ -91,7 +91,7 @@ h6 {
 }
 
 .top-bg-content {
-  background: url("http://amir-jf.ir/wp-content/uploads/2020/09/bg-1.jpg");
+  background: url("./assets/images/bg.jpg");
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -240,7 +240,7 @@ stroke-dashoffset: 0;
 
 
 .hero{
-  background: url('http://amir-jf.ir/wp-content/uploads/2020/09/bg-1.jpg');
+  background: url('./assets/images/bg.jpg');
   position: relative;
   background-size: cover;
   background-position: center;

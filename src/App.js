@@ -1,4 +1,7 @@
 import "./App.css";
+import me from './assets/images/me.png'
+import bg from './assets/images/bg.jpg'
+
 import Typewriter from "typewriter-effect";
 import AvatarInfo from "./components/AvatarInfo";
 import PersonInfo from "./components/PersonInfo";
@@ -62,7 +65,7 @@ function App() {
                   </div>
                   <img
                     className="my-pic"
-                    src="http://amir-jf.ir/wp-content/uploads/2021/10/face-2-min-1.png"
+                    src={me}
                   />
                 </div>
               </div>
