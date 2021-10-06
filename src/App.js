@@ -5,6 +5,8 @@ import Devider from './components/Devider'
 import Languages from './components/Languages'
 import Coding from './components/Coding'
 import Knowledge from './components/Knowledge'
+import CounterSection from './components/CounterSection'
+import Services from './components/Services';
 
 function App() {
   return (
@@ -47,46 +49,16 @@ function App() {
                   <h4>code das;lks;lad;kl</h4>
                 </div>
                 </div>
-                <img className="my-pic" src="http://amir-jf.ir/wp-content/uploads/2021/10/me.png" />
+                <img className="my-pic" src="http://amir-jf.ir/wp-content/uploads/2021/10/face-2-min-1.png" />
 
               </div>
             </div>
             <div className="content">
                   <div className="container-fluid">
-                  <div className="row d-flex justify-content-start">
-                    <div className="col-md-3">
-                      <div className="counter-container">
-                        <div className="counter-box">
-                          <span className="counter">10</span>
-                        </div>               
-                    <h4 className="text-white">Years experience</h4>
-                      </div>
+                    <div className="row">
+                  <CounterSection />
+                  <Services />
                     </div>
-                    <div className="col-md-3">
-                      <div className="counter-container">
-                        <div className="counter-box">
-                          <span className="counter">10</span>
-                        </div>               
-                    <h4 className="text-white">Years experience</h4>
-                      </div>
-                    </div>
-                    <div className="col-md-3">
-                      <div className="counter-container">
-                        <div className="counter-box">
-                          <span className="counter">10</span>
-                        </div>               
-                    <h4 className="text-white">Years experience</h4>
-                      </div>
-                    </div>
-                    <div className="col-md-3">
-                      <div className="counter-container">
-                        <div className="counter-box">
-                          <span className="counter">10</span>
-                        </div>               
-                    <h4 className="text-white">Years experience</h4>
-                      </div>
-                    </div>
-                  </div>
                   </div>
                 
             </div>
