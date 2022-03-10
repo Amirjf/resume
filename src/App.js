@@ -1,11 +1,14 @@
+import react,{useState} from "react";
 import "./App.css";
 import me from './assets/images/me.png'
-import bg from './assets/images/bg.jpg'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Typewriter from "typewriter-effect";
 import AvatarInfo from "./components/AvatarInfo";
 import PersonInfo from "./components/PersonInfo";
 import Devider from "./components/Devider";
+import ContactMe from "./components/ContactMe";
+import Portfolio from './components/Portfolio'
 import Languages from "./components/Languages";
 import Coding from "./components/Coding";
 import Knowledge from "./components/Knowledge";
@@ -13,13 +16,20 @@ import CounterSection from "./components/CounterSection";
 import Services from "./components/Services";
 
 function App() {
+
+  const {toggleMenu, setToggleMenu} = useState(false);
+
+
   return (
     <div className="app">
       <div className="wrapper">
         <div className="container-fluid">
           <div className="row p-0 no-gutters">
             <div className="col-md-3">
-              <div className="side-info">
+                <button className="mobile-toggle">
+              <FontAwesomeIcon icon={faBars} color="white" size="2x" />
+                </button>
+              <div className={`side-info`}>
                 <AvatarInfo />
                 <div className="sidebar">
                   <PersonInfo />
@@ -74,6 +84,12 @@ function App() {
                   <div className="row pt-5">
                     <CounterSection />
                     <Services />
+                    <Portfolio />
+                    <ContactMe /> 
+                    <br />
+                    <hr />
+<br />
+<br />
                   </div>
                 </div>
               </div>

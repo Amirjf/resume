@@ -1,0 +1,64 @@
+.title{
+    padding-top: 16px;
+
+}
+  .title a{
+      text-decoration: none;
+      padding-top: 7px;
+      color: #fff;
+      
+  }
+
+  .test{
+      z-index: 0;
+      transition: 2s ;
+      position: relative;
+  }
+
+  .test:hover{
+    z-index: 9;
+      transform: scale(1.2);
+  }
+  
+  .frame{
+    padding: 2px;
+    border-radius: 7px;
+  }
+
+  
+  .frame{
+    width:312px;
+    height:380px;
+    border: rgb(223, 223, 223) 2px solid;
+    margin: 24px 5px 0 0;
+    overflow: hidden;
+  }
+
+
+  .frame:hover{
+      z-index: 9;
+  }
+
+
+  .frame img{
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 9px;
+    width:100%;
+    transform: translateY(0);
+    transition: 8s ease-out;
+  }
+
+  .frame:hover img {
+    z-index: 4;
+    transform: scale(1.2);
+  }
+
+  .frame:hover img {
+    object-fit: cover;
+    width:100%;
+    /* Considering frame height   */
+    transform: translateY(calc(-100% + 300px));
+    transition: 8s ease-out;
+  }
+

@@ -3,7 +3,7 @@ import React from 'react'
 function CounterItem(props) {
     const {value , text} = props;
     return (
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-6">
             <div className="counter-container">
                 <div className="counter-box">
                     <span className="counter">{value}</span>
